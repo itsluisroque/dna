@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>DNA Tester 🧪🧫</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.4.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.4.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>DNA Tester 🧪🧫</h1>
+      <label for="databases">Choose a Database:</label>
+      <select name="databases" id="databases">
+        <option value="large">large</option>
+        <option value="small">small</option>
+      </select>
+      <br><br>
+      <label for="sequence">Upload the sequence of DNA:</label>
+      <input type="file" id="sequence" name="sequence" required>
+      <br />
+      <p>Sequence of DNA:</p>
+        <textarea name="content" id="content"></textarea>
+      <button py-click="search" id="search" type="submit"></button>
+  </div>
+  <div class="container">
+    <p>Results:<span id="result"></span></p>
+  </div>
+</body>
+</html>

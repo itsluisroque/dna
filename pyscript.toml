@@ -1,0 +1,5 @@
+packages = ["pandas"]
+
+[files]
+"databases/large.csv" = "databases/large.csv"
+"databases/small.csv" = "databases/small.csv"
